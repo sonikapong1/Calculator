@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+     <div id="calc">
+        <table>
+            <tr>
+                <td colspan="4"><input type="text" id="data"></td>
+            </tr>
+            <tr>
+                <td><button class="number" value="+" onclick='btnvalue("+")'>+</button></td>
+                <td><button class="number" value="-" onclick='btnvalue("-")'>-</button></td>
+                <td><button class="number" value="x" onclick='btnvalue("*")'>x</button></td>
+                <td><button class="number" value="/" onclick='btnvalue("/")'>/</button></td>
+            </tr>
+            <tr>
+                <td><button  class="number" value="7" onclick='btnvalue("7")'>7</button></td>
+                <td><button class="number" value="8" onclick='btnvalue("8")'>8</button></td>
+                <td><button class="number" value="9" onclick='btnvalue("9")'>9</button></td>
+                <th rowspan="4" ><button style="height:300px;background-color: rgb(198, 54, 54);" onclick="calc()">=</button></th>
+            </tr>
+            <tr>
+                <td><button class="number" value="4" onclick='btnvalue("4")'>4</button></td>
+                <td><button class="number" value="5" onclick='btnvalue("5")'>5</button></td>
+                <td><button class="number" value="6" onclick='btnvalue("6")'>6</button></td>    
+            </tr>
+            <tr>
+                <td><button class="number" value="1" onclick='btnvalue("1")'>1</button></td>
+                <td><button class="number" value="2" onclick='btnvalue("2")'>2</button></td>
+                <td><button class="number" value="3" onclick='btnvalue("3")'>3</button></td>
+            </tr>
+            <tr>
+                <td><button class="number" value="0" onclick="btnvalue('0')">0</button></td>
+                <td><button class="number" onclick="dataclr()">AC</button></td>
+                <td><button class="number" value="%" onclick="btnvalue('%')">%</button></td>
+            </tr>
+        </table>
+        <script src="index.js"></script>
+
+    </div>
+</body>
+</html>
